@@ -1,7 +1,7 @@
 const orm = require('../config/orm.js'); // import orm.js
 
 // object containing ORM function calls
-var burger = {\
+var burger = {
     // calls selectAll method that retrieves data from database
     select: function(cb) {
         orm.selectAll("burgers", function(res) {
