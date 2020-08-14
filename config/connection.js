@@ -3,9 +3,10 @@ var mysql = require('mysql'); // import sql package
 // connect to sql database
 var con = mysql.createConnection({
   host: "localhost",
+  port: 3306,
   user: "root",
   password: "myRootPassword",
-  database: "burgers_db"
+  database: "burgers_db",
 });
 
 // test connection
